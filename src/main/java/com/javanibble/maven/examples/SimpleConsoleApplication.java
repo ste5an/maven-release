@@ -1,4 +1,4 @@
-package com.code2bits.maven.examples;
+package com.javanibble.maven.examples;
 
 
 import org.slf4j.Logger;

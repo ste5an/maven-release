@@ -9,9 +9,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.code2bits.maven.examples</groupId>
+	<groupId>com.javanibble.maven.examples</groupId>
 	<artifactId>SpringBootMavenReleasePlugin</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<name>SpringBoot Maven Release Plugin</name>
 	<description>A simple console application making use of Spring Boot illustrating the Maven Release Plugin.</description>
@@ -26,20 +26,20 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://github.com/Code2Bits/SpringBoot-Maven-Release-Plugin.git</connection>
-		<developerConnection>scm:git:https://github.com/Code2Bits/SpringBoot-Maven-Release-Plugin.git</developerConnection>
-		<url>https://github.com/Code2Bits/SpringBoot-Maven-Release-Plugin</url>
+		<connection>scm:git:https://github.com/javanibble/maven-release-plugin-example.git</connection>
+		<developerConnection>scm:git:https://github.com/javanibble/maven-release-plugin-example.git</developerConnection>
+		<url>https://github.com/javanibble/maven-release-plugin-example.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
 		<repository>
 			<id>packagecloud.release</id>
-			<url>packagecloud+https://packagecloud.io/code2bits/release</url>
+			<url>packagecloud+https://packagecloud.io/javanibble/release</url>
 		</repository>
 		<snapshotRepository>
 			<id>packagecloud.snapshot</id>
-			<url>packagecloud+https://packagecloud.io/code2bits/snapshot</url>
+			<url>packagecloud+https://packagecloud.io/javanibble/snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
 
