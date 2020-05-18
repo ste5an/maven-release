@@ -50,8 +50,8 @@ For this example, I will use PackageCloud as a maven repository to store the sna
 To setup a free account on PackageCloud, use the following [link][0].
 
 The following two repositories were created to host the snapshot artifacts and the release artifacts.
-* [Code2Bits Snapshot Repository][1] 
-* [Code2Bits Release Repository][2] 
+* [Java Nibble Snapshot Repository][1] 
+* [Java Nibble Release Repository][2] 
 
 ## Maven Setup
 After you have created a Snapshot & Release repository on PackageCloud, it is important also to setup maven to connect to these repositories. PackageCloud provides an **API-Token** that is used for maven to authenticate with PackageCloud.
@@ -86,11 +86,11 @@ After you have created a Snapshot & Release repository on PackageCloud, it is im
 <distributionManagement>
     <repository>
         <id>packagecloud.release</id>
-        <url>packagecloud+https://packagecloud.io/code2bits/release</url>
+        <url>packagecloud+https://packagecloud.io/javanibble/release</url>
     </repository>
     <snapshotRepository>
         <id>packagecloud.snapshot</id>
-        <url>packagecloud+https://packagecloud.io/code2bits/snapshot</url>
+        <url>packagecloud+https://packagecloud.io/javanibble/snapshot</url>
     </snapshotRepository>
 </distributionManagement>
 ```
@@ -100,7 +100,7 @@ Use the following command to compile the SpringBoot application and deploy the s
 
 #### Build & Deploy Application
 
-The following command will build the SpringBoot application and then deploy the snapshot version to the PackageCloud [Code2Bits Snapshot Repository][1].
+The following command will build the SpringBoot application and then deploy the snapshot version to the PackageCloud [Java Nibble Snapshot Repository][1].
 ```bash
 $ mvn clean deploy
 ```
@@ -123,5 +123,5 @@ Congratulations! You have successfully deployed the snapshot artifacts to a snap
 
 
 [0]:https://packagecloud.io/users/new?plan=free_usage_plan
-[1]:https://packagecloud.io/code2bits/snapshot
-[2]:https://packagecloud.io/code2bits/release
+[1]:https://packagecloud.io/javanibble/snapshot
+[2]:https://packagecloud.io/javanibble/release
