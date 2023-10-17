@@ -26,22 +26,11 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://github.com/javanibble/maven-release-plugin-example.git</connection>
+		<connection>scm:git:https://github.com/ste5an/maven-release.git</connection>
 		<developerConnection>scm:git:https://github.com/ste5an/maven-releasee.git</developerConnection>
 		<url>https://github.com/ste5an/maven-release.git</url>
 		<tag>HEAD</tag>
 	</scm>
-
-	<distributionManagement>
-		<repository>
-			<id>packagecloud.release</id>
-			<url>packagecloud+https://packagecloud.io/javanibble/release</url>
-		</repository>
-		<snapshotRepository>
-			<id>packagecloud.snapshot</id>
-			<url>packagecloud+https://packagecloud.io/javanibble/snapshot</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -57,13 +46,7 @@
 	</dependencies>
 
 	<build>
-		<extensions>
-			<extension>
-				<groupId>io.packagecloud.maven.wagon</groupId>
-				<artifactId>maven-packagecloud-wagon</artifactId>
-				<version>0.0.6</version>
-			</extension>
-		</extensions>
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
